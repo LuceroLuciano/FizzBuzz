@@ -1,37 +1,3 @@
-const fs = require("fs");
-
-// Part 1 Read json file ===========================
-const rawdata = fs.readFileSync("explorers.json");
-const explorers = JSON.parse(rawdata); // Convierto a formato JSON
-console.log(`Total esxplorers: ${totallExplorers = explorers.length}`) // Obtiene el total de explorers
-console.log(explorers) // obtiene toda la lista
-
-console.log('\n\n\n============================================')
-
-// Part 2: Get the quantity of explorers names in node
-const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-console.log(explorersInNode)
-console.log(`The Quantity of explorers names in node is: ${explorersInNode.length}`) // consigue la cantidad de explorer
-
-console.log('\n\n\n=====================Explorers Node=======================')
-
-
-// Part3: Get the explorer's usernames in Node
-const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
-const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-console.log(usernamesInNode)
-
-console.log('\n\n\n================= explorer un Java ===========================')
-
-// Part4: Get the explorerś name in Java
-const explorerInJavaToGetnames = explorers.filter((explorerJava) => explorerJava.mission == "java")
-const usernamesInJava = explorerInJavaToGetnames.map((explorerJava) => explorerJava.githubUsername)
-console.log(explorerInJavaToGetnames)
-console.log(usernamesInJava)
-
-
-console.log("===========================assignFizzTrick===============")
-
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
 // Part 5: Get a new list of explorers in node, if the score numbers is divisible by 3, I need a new propery called trick, and the value assigned is FIZZ, if not the value should be the score itself.
