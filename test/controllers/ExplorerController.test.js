@@ -1,3 +1,4 @@
+const ExplorerService = require('../../lib/services/ExplorerService')
 const ExplorerController = require('./../../lib/controllers/ExplorerController')
 const Reader = require('./../../lib/utils/Reader')
 
@@ -11,5 +12,11 @@ describe("Unit Test Controllers", () => {
     test("2. Test for show a list of usernames where mission is equal node", () => {
         const filterUsernameByMission = ExplorerController.getExplorersUsernamesByMission("node")        
         expect(filterUsernameByMission[0]).toBe("ajolonauta1")
+    })
+
+    test("3. Test for amount of explorer in mission node", () => {
+        const getAmountOfExplorersByMission = ExplorerController.getExplorersAmonutByMission("node")
+        expect(getAmountOfExplorersByMission).toBe(10)
+        console.log(getAmountOfExplorersByMission)
     })
 })
