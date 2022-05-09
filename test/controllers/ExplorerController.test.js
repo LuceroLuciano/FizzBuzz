@@ -9,7 +9,7 @@ describe("Unit Test Controllers", () => {
     })
 
     test("2. Test for show a list of usernames where mission is equal node", () => {
-        const readerFile = Reader.readJsonFile("explorers.json")
+        // const readerFile = Reader.readJsonFile("explorers.json")
         const filterUsernameByMission = ExplorerController.getExplorersUsernamesByMission("node")        
         expect(filterUsernameByMission[0]).toBe("ajolonauta1")
     })
