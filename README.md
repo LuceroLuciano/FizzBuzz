@@ -62,5 +62,6 @@ Es una guia de estilos para Java Script
     "test": "node ./node_modules/.bin/jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
-  },```
+  },
+```
 
