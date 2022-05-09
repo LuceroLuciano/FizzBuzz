@@ -12,6 +12,5 @@ describe("Unit Test Controllers", () => {
         const readerFile = Reader.readJsonFile("explorers.json")
         const filterUsernameByMission = ExplorerController.getExplorersUsernamesByMission("node")        
         expect(filterUsernameByMission[0]).toBe("ajolonauta1")
-        console.log(filterUsernameByMission)
     })
 })
