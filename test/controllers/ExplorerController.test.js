@@ -5,7 +5,6 @@ const Reader = require('./../../lib/utils/Reader')
 describe("Unit Test Controllers", () => {
     test("1. Test for to filter a list of explorers where the mission is equal node", () => {
         const filteListExplorersInNode = ExplorerController.getExplorersByMission("node")
-        console.log(filteListExplorersInNode)
         expect(filteListExplorersInNode.length).toBe(10) 
     })
 
@@ -17,6 +16,5 @@ describe("Unit Test Controllers", () => {
     test("3. Test for amount of explorer in mission node", () => {
         const getAmountOfExplorersByMission = ExplorerController.getExplorersAmonutByMission("node")
         expect(getAmountOfExplorersByMission).toBe(10)
-        console.log(getAmountOfExplorersByMission)
     })
 })
