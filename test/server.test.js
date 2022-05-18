@@ -10,7 +10,7 @@ describe("Unit Test of Endpoints", () => {
         .expect((request) => {
             request.body.data.length = 10;
             request.body.data.mission = "node";
-            request.body.toHaveProperty('get')
+            request.body.toHaveProperty('get');
         // expect(res.statusCode).toEqual(201)
         // expect(res.body).toHaveProperty('post')
         })
