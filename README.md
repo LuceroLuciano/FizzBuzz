@@ -34,7 +34,7 @@ Permite automatizar el código.
 
 #### 1.- Crear el archivo `.github/workflows/test.yml` en el directorio raiz que contenga el siguiente código:
 
-```yml
+```
 name: Run Tests in my project every push on GitHub
 
 on: [push]
