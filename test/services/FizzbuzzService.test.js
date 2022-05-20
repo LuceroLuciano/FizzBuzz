@@ -23,3 +23,29 @@ describe("Test of unit", () => {
     });
     
 });
+
+describe("Test's unit of FIZZBUZZ without trick", () => {
+    test("score es divisible entre 3 -> FIZZ", () => {
+        const numberExplorer = [{score: 3}];
+        const validationInNumber = FizzbuzzService.applyValidationInNumber(numberExplorer[0]);
+        expect(validationInNumber).toBe("FIZZ");
+    });
+
+    test("score es divisible entre 5 -> BUZZ", () => {
+        const numberExplorer = [{score: 5}];
+        const validationInNumber = FizzbuzzService.applyValidationInNumber(numberExplorer[0]);
+        expect(validationInNumber).toBe("BUZZ")
+    });
+
+    test("score es divisible entre 15 -> FIZZBUZZ", () => {
+        const numberExplorer = [{score: 15}];
+        const validationInNumber = FizzbuzzService.applyValidationInNumber(numberExplorer[0]);
+        expect(validationInNumber).toBe("FIZZBUZZ");
+    });
+
+    test("score no es divisible -> SCORE", () => {
+        const numberExplorer = [{score: 7}];
+        const validationInNumber = FizzbuzzService.applyValidationInNumber(numberExplorer[0]);
+        expect(validationInNumber).toBe(7)
+    })
+})
