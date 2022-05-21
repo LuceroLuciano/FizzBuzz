@@ -28,7 +28,7 @@ console.log(FizzbuzzService.applyValidationInExplorer(explorer4));
 
 
 /*------------- */
-console.log("Probando el nuevo metodo static applyValidationInNumber")
+console.log("Probando el nuevo metodo static applyValidationInNumber");
 const explorer5 = {name: "Explorer5", score: 7
 };
 console.log(FizzbuzzService.applyValidationInNumber(explorer5));
