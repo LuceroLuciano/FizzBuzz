@@ -64,4 +64,23 @@ Es una guia de estilos para Java Script
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
 ```
+## Agregando funcionalidad de bot
 
+Creando un Bot con Telegram 
+
+### 1. Crear una cuenta de telegram
+### 2. Acceder a Bot Father [https://telegram.me/BotFather](https://telegram.me/BotFather)
+### 3. En el bot father ingresar el siguiente texto
+  `/newbot`
+### 4. Ingresar el nombre del bot (puedes llamarlo como desees)
+### 5. Guardar el token
+
+### 6. Instalar dependencias 
+  `npm install node-telegram-bot-api --save` para el bot de telegram
+  `npm install dotenv --save`  para una configuración externelizada
+### 7. Crear un nuevo scrip, Ejemplo: `lib/bot.js`
+### 8. Crear un archivo `.env` que contrendra el token del bot. (ESTE ARCHIVO NO SE VERSIONA)
+### 9. Modificar el package.json, agregando lo siguiente dentro de `script`:
+  `"bot": node .lib/bot.js`
+### 10. Para correr el `bot.js` ejecutar el siguiente comando:
+`npm run bot`
